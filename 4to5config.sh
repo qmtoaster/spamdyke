@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cp -p /etc/spamdyke/spamdyke.conf /etc/spamdyke/spamdyke.conf.bak
+
 sed -i \
 -e 's/reject-missing-sender-mx/reject-sender=no-mx/g' \
 -e 's/rejection-text-missing-sender-mx/rejection-text-sender-no-mx/g' \
