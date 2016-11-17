@@ -9,4 +9,4 @@ sed -i \
 -e 's/rejection-text-identical-sender-recipient/rejection-text-recipient-same-as-sender/g' \
 -e 's/local-domains-file/qmail-rcpthosts-file/g' \
 -e 's/local-domains-entry=/#local-domains-entry=(Add these entries to qmail-rcpthosts-file)/g' \
--e 's/morercpthosts/qmail-morercpthosts-cdb/'g /etc/spamdyke/spamdyke.conf
+-e 's/morercpthosts$/qmail-morercpthosts-cdb/'g /etc/spamdyke/spamdyke.conf
